@@ -1,0 +1,55 @@
+.Checkers {
+    width: 90vw;
+    height: 90vh;
+    transform: translate(5vw, 5vh);
+}
+.center{
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.Checkers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Checkers > div {
+    height: 100%
+}
+
+.Checkers > div:nth-child(1),
+.Checkers > div:nth-child(3){
+    width: 20%;
+}
+.Checkers > div:nth-child(2){
+    width: 50%;
+}
+
+.selected {
+    border: 2px solid blue;
+}
+
+img{
+    z-index: 1;
+    max-width: 85%;
+    max-height: 85%;
+}
+
+#PlayerCemetry, #EnemyCemetry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#PlayerCemetry > .checker{
+    width: 60px;
+    height: 60px;
+}
+
+#EnemyCemetry > .checker{
+    width: 60px;
+    height: 60px;
+}
